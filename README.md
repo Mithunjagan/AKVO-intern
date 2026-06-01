@@ -37,6 +37,7 @@ We have established dedicated `/readme` directories containing modular, comprehe
 * **🚀 [Installation, Setup & Operation](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/installation_and_operation.md)**: Virtual environment commands, `.env` configurations, Uvicorn execution, and REST API diagnostics.
 * **🗄️ [Database Schema & Services Layer](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/database_and_services.md)**: Supabase Postgres tables (`esp_sensor_data`), Pydantic models, query decoupling, and fleet health algorithms.
 * **🧪 [Simulation & Automated Testing](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/simulation_and_testing.md)**: CLI simulator parameters, scenario matrices (Offline, Mismatch, Cycling), and validation rule workflows.
+* **🎭 [Comical Architect's Guide](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/comedy_architecture_guide.md)**: A hilarious, highly engaging, and complete detailed operational tour of the cloud backend!
 
 ---
 

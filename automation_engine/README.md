@@ -15,10 +15,11 @@ Developed by **Akvosphere**.
 
 We have established a dedicated `/readme` directory containing modular, comprehensive guides for each part of the system. Click the links below to explore the deep documentation:
 
-* **🏗️ [Backend System Architecture](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine%20-%20Copy/automation_engine%20-%20Copy/readme/architecture.md)**: FastAPI layout, lifespan hooks, settings schemas, and directory responsibilities.
-* **🚀 [Installation, Setup & Operation](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine%20-%20Copy/automation_engine%20-%20Copy/readme/installation_and_operation.md)**: Virtual environment commands, `.env` setups, Uvicorn runs, and REST API diagnostics.
-* **🗄️ [Database Schema & Services Layer](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine%20-%20Copy/automation_engine%20-%20Copy/readme/database_and_services.md)**: Supabase Postgres tables (`esp_sensor_data`), Pydantic models, query decoupling, and machine wellness algorithms.
-* **🧪 [Simulation & Automated Testing](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine%20-%20Copy/automation_engine%20-%20Copy/readme/simulation_and_testing.md)**: CLI parameters, test scenarios (Normal, Offline, Mismatch, Cycling), and backend rule validation workflows.
+* **🏗️ [Backend System Architecture](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/architecture.md)**: FastAPI layout, lifespan hooks, settings schemas, and directory responsibilities.
+* **🚀 [Installation, Setup & Operation](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/installation_and_operation.md)**: Virtual environment commands, `.env` setups, Uvicorn runs, and REST API diagnostics.
+* **🗄️ [Database Schema & Services Layer](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/database_and_services.md)**: Supabase Postgres tables (`esp_sensor_data`), Pydantic models, query decoupling, and machine wellness algorithms.
+* **🧪 [Simulation & Automated Testing](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/simulation_and_testing.md)**: CLI parameters, test scenarios (Normal, Offline, Mismatch, Cycling), and backend rule validation workflows.
+* **🎭 [Comical Architect's Guide](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/comedy_architecture_guide.md)**: A hilarious, highly engaging, and complete detailed operational tour of the cloud backend!
 
 ---
 
@@ -83,7 +84,7 @@ graph TD
 
 ## ⚡ Quick Start Guide (Terminal)
 
-For detailed step-by-step instructions, please consult the **[Installation and Operation Guide](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine%20-%20Copy/automation_engine%20-%20Copy/readme/installation_and_operation.md)**. Here is the quick-reference cheat sheet for local run:
+For detailed step-by-step instructions, please consult the **[Installation and Operation Guide](file:///C:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/installation_and_operation.md)**. Here is the quick-reference cheat sheet for local run:
 
 ### 1. Environment Setup
 ```bash
