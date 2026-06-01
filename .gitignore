@@ -39,5 +39,10 @@ venv.bak/
 .DS_Store
 Thumbs.db
 
+# Local backups / copied directories
+* - Copy/
+* - Copy*
+automation_engine - Copy/
+
 # Project-specific logs
 *.log
