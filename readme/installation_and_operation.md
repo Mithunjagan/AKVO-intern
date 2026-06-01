@@ -102,7 +102,7 @@ A folder starting with **`28-`** must appear. This is your DS18B20 sensor's uniq
 To run the orchestrated sensor monitoring application, execute the main script from the root workspace directory:
 
 ```bash
-sudo python3 -m akvo_awg.main
+sudo python3 main.py
 ```
 * **Why `sudo` is required**: Direct access to the Raspberry Pi's hardware registers (GPIO pins, raw memory manipulation for edge detection interrupts, I2C bus) requires superuser root privileges.
 
@@ -125,8 +125,8 @@ To ensure the AKVO AWG system automatically starts up whenever the Raspberry Pi 
 
    [Service]
    Type=simple
-   ExecStart=/usr/bin/python3 -m akvo_awg.main
-   WorkingDirectory=/c/Users/mith1/OneDrive/Desktop/AKVO/Rasp
+   ExecStart=/usr/bin/python3 /home/pi/Rasp/main.py
+   WorkingDirectory=/home/pi/Rasp
    StandardOutput=journal
    StandardError=journal
    Restart=always

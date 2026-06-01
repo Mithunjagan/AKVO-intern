@@ -22,6 +22,33 @@ We have established a dedicated `/readme` directory containing modular, comprehe
 
 ---
 
+## 🗂️ Clean Repository Architecture
+
+The repository directory layout is organized following modern best practices to separate the active system package, documentation, scrapers, and backups:
+
+```text
+AKVO-intern/
+├── akvo_awg/               # 📦 Core Python package (Sensor Orchestration & FSM)
+│   ├── sensors/            #   ├── Submodule for hardware-level sensors (SHT45, DS18B20)
+│   ├── config.py           #   ├── Central configurations & BCM pin mappings
+│   ├── state.py            #   ├── Thread-safe shared global state
+│   ├── main.py             #   └── Continuous non-blocking cooperative loop
+│   └── ...                 
+├── backups/                # 📂 Archive folder for legacy single-file script (code.py)
+├── readme/                 # 📂 System detailed documentation folder
+│   ├── architecture.md     #   ├── Execution stacks & scheduling designs
+│   ├── hardware_wiring.md  #   ├── BCM pin maps & electrical guidelines
+│   ├── installation.md     #   └── OS setup, bus scanners & systemd daemon steps
+│   └── state_machine.md    
+├── sslc_results_scraper/   # 📂 Independent personal web crawlers & HTML cache files
+├── README.md               # 📄 Primary index homepage
+├── main.py                 # 🚀 Unified root entrypoint runner (Executes the package)
+├── requirements.txt        # 📋 Python package dependency manifests
+└── .gitignore              # 🧹 Standard git exclusions (cache, local copy directories)
+```
+
+---
+
 ## 🌟 Key Features
 
 * **⏱️ Monotonic Time Orchestration**: The main program loop avoids CPU-blocking calls or NTP clock drift using Python's `time.monotonic()` clock. Everything operates on cooperative, elapsed timers.
@@ -92,7 +119,7 @@ sudo reboot
 ```bash
 sudo apt update && sudo apt install -y python3-pip python3-smbus i2c-tools
 pip3 install -r requirements.txt --break-system-packages
-sudo python3 -m akvo_awg.main
+sudo python3 main.py
 ```
 
 ### 3. Setup Boot Service
@@ -107,7 +134,7 @@ Description=AKVO AWG Sensor Monitoring System
 After=multi-user.target
 
 [Service]
-ExecStart=/usr/bin/python3 -m akvo_awg.main
+ExecStart=/usr/bin/python3 /home/pi/main.py
 WorkingDirectory=/home/pi
 Restart=always
 User=root
