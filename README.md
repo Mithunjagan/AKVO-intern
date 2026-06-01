@@ -37,10 +37,10 @@ We have established a dedicated `/readme` directory containing modular, comprehe
 ```mermaid
 graph TD
     %% Styling
-    classDef hardware fill:#f9d5e5,stroke:#333,stroke-width:2px;
-    classDef drivers fill:#eeac99,stroke:#333,stroke-width:2px;
-    classDef libs fill:#e0b115,stroke:#333,stroke-width:2px;
-    classDef core fill:#b5e7a0,stroke:#333,stroke-width:2px;
+    classDef hardware fill:#f9d5e5,stroke:#333,stroke-width:2px,color:#000;
+    classDef drivers fill:#eeac99,stroke:#333,stroke-width:2px,color:#000;
+    classDef libs fill:#e0b115,stroke:#333,stroke-width:2px,color:#000;
+    classDef core fill:#b5e7a0,stroke:#333,stroke-width:2px,color:#000;
 
     ds[DS18B20 Temp]:::hardware --> w1[1-Wire Driver]:::drivers --> python_w1[w1thermsensor]:::libs --> app[akvo_awg Package]:::core
     sht[SHT45 Sensor]:::hardware --> i2c[I2C Driver]:::drivers --> blinka[Adafruit Blinka]:::libs --> app

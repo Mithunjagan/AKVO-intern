@@ -11,10 +11,10 @@ The system is structured into four distinct logical layers, moving from the phys
 ```mermaid
 graph TD
     %% Styling
-    classDef hardware fill:#f9d5e5,stroke:#333,stroke-width:2px;
-    classDef drivers fill:#eeac99,stroke:#333,stroke-width:2px;
-    classDef libs fill:#e0b115,stroke:#333,stroke-width:2px;
-    classDef core fill:#b5e7a0,stroke:#333,stroke-width:2px;
+    classDef hardware fill:#f9d5e5,stroke:#333,stroke-width:2px,color:#000;
+    classDef drivers fill:#eeac99,stroke:#333,stroke-width:2px,color:#000;
+    classDef libs fill:#e0b115,stroke:#333,stroke-width:2px,color:#000;
+    classDef core fill:#b5e7a0,stroke:#333,stroke-width:2px,color:#000;
 
     %% Hardware Nodes
     subgraph HW [1. Hardware Layer]
