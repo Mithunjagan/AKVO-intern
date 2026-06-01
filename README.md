@@ -17,14 +17,26 @@ Developed by **Mithun Kumar J** for **Akvosphere**.
 ## 🗂️ Table of Contents
 1. [🌟 System Overview & Core Philosophy](#-system-overview--core-philosophy)
 2. [🗂️ Clean Repository Architecture](#%EF%B8%8F-clean-repository-architecture)
-3. [🔌 Edge Hardware Wiring & BCM Pinout (Raspberry Pi 3A)](#-edge-hardware-wiring--bcm-pinout-raspberry-pi-3a)
-4. [🤖 Finite State Machine (FSM) & Relay Automation](#-finite-state-machine-fsm--relay-automation)
-5. [🔄 Edge Software Orchestrator (akvo_awg)](#-edge-software-orchestrator-akvo_awg)
-6. [⚙️ Cloud Backend Architecture (automation_engine)](#%EF%B8%8F-cloud-backend-architecture-automation_engine)
-7. [🗄️ Supabase Telemetry Schema & Cloud Analytics](#%EF%B8%8F-supabase-telemetry-schema--cloud-analytics)
-8. [🧪 Dry-Run time-Series Simulation (simulator.py)](#-dry-run-time-series-simulation-simulatorpy)
 9. [🚀 System Installation & Daemon Deployment](#-system-installation--daemon-deployment)
 10. [🏢 About Akvosphere](#-about-akvosphere)
+
+---
+
+## 📂 System Documentation Index
+
+We have established dedicated `/readme` directories containing modular, comprehensive guides for both components of the AKVO IoT fleet:
+
+### 🔌 Edge Hardware & Controller Documentation
+* **🔌 [Hardware Wiring & Pin Mappings](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/readme/hardware_wiring.md)**: Physical pinouts, electrical pull-up guidelines, and electrical isolation practices.
+* **🤖 [FSM State Machine & Relay Logic](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/readme/state_machine.md)**: Transition tables, truth maps, safety timers, and mode exit conditions.
+* **🏗️ [Software Architecture & Execution Stack](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/readme/architecture.md)**: Monotonic scheduler design, module specifications, and thread-safe interrupts.
+* **🚀 [Installation, Operation & Service Daemon](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/readme/installation_and_operation.md)**: Step-by-step setup, debugging scans, and systemd deployment.
+
+### ⚙️ IoT Cloud Backend Documentation
+* **🏗️ [Backend System Architecture](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/architecture.md)**: FastAPI layout, lifespan hooks, settings settings, and directory responsibilities.
+* **🚀 [Installation, Setup & Operation](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/installation_and_operation.md)**: Virtual environment commands, `.env` configurations, Uvicorn execution, and REST API diagnostics.
+* **🗄️ [Database Schema & Services Layer](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/database_and_services.md)**: Supabase Postgres tables (`esp_sensor_data`), Pydantic models, query decoupling, and fleet health algorithms.
+* **🧪 [Simulation & Automated Testing](file:///c:/Users/mith1/OneDrive/Desktop/AKVO/Rasp/automation_engine/readme/simulation_and_testing.md)**: CLI simulator parameters, scenario matrices (Offline, Mismatch, Cycling), and validation rule workflows.
 
 ---
 
