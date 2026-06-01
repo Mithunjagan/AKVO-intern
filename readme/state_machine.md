@@ -16,18 +16,18 @@ stateDiagram-v2
     
     STARTUP --> FAN_ONLY : Immediate Transition\n(Resets mode timer)
     
-    note over FAN_ONLY : Fan ON | Compressor OFF | Pump OFF
+    note right of FAN_ONLY : Fan ON | Compressor OFF | Pump OFF
     FAN_ONLY --> AWG_RUN : If elapsed time >= 300s (5 Min)\n(Protects compressor from short cycles)
     
-    note over AWG_RUN : Fan ON | Compressor ON | Pump OFF
+    note right of AWG_RUN : Fan ON | Compressor ON | Pump OFF
     AWG_RUN --> TANK_FULL : If Tank Float = LOW (Full)\n(Safety Override)
     AWG_RUN --> PUMPING : If Sink Float = LOW (Water Present)\n(Starts pump, records time)
     
-    note over PUMPING : Fan ON | Compressor ON | Pump ON
+    note right of PUMPING : Fan ON | Compressor ON | Pump ON
     PUMPING --> TANK_FULL : If Tank Float = LOW (Full)\n(Immediate Shutdown)
     PUMPING --> AWG_RUN : If Sink Float = HIGH (Drained)\nOR Pump Timeout >= 120s (Stuck Float)
     
-    note over TANK_FULL : Fan OFF | Compressor OFF | Pump OFF
+    note right of TANK_FULL : Fan OFF | Compressor OFF | Pump OFF
     TANK_FULL --> FAN_ONLY : If elapsed time >= 1800s (30 Min)\n(Restarts cycle to recheck tank)
 ```
 

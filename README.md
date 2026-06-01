@@ -119,18 +119,18 @@ stateDiagram-v2
     [*] --> STARTUP : Power ON
     STARTUP --> FAN_ONLY : Immediate Transition
     
-    note over FAN_ONLY : Fan ON | Compressor OFF | Pump OFF
+    note right of FAN_ONLY : Fan ON | Compressor OFF | Pump OFF
     FAN_ONLY --> AWG_RUN : Timer >= 300s (5 Min)\n(Establishes airflow, pre-cools grid)
     
-    note over AWG_RUN : Fan ON | Compressor ON | Pump OFF
+    note right of AWG_RUN : Fan ON | Compressor ON | Pump OFF
     AWG_RUN --> TANK_FULL : Tank Float = LOW (Full)
     AWG_RUN --> PUMPING : Sink Float = LOW (Water present)
     
-    note over PUMPING : Fan ON | Compressor ON | Pump ON
+    note right of PUMPING : Fan ON | Compressor ON | Pump ON
     PUMPING --> TANK_FULL : Tank Float = LOW (Full)
     PUMPING --> AWG_RUN : Sink Float = HIGH (Drained)\nOR Pump Timeout >= 120s (Stuck Float fallback)
     
-    note over TANK_FULL : Fan OFF | Compressor OFF | Pump OFF
+    note right of TANK_FULL : Fan OFF | Compressor OFF | Pump OFF
     TANK_FULL --> FAN_ONLY : Timer >= 1800s (30 Min)\n(Sleep cycle over; tests float switch state)
 ```
 
