@@ -46,7 +46,7 @@ graph TD
     sht[SHT45 Sensor]:::hardware --> i2c[I2C Driver]:::drivers --> blinka[Adafruit Blinka]:::libs --> app
     lcd[16x2 Display]:::hardware --> i2c --> rplcd[RPLCD Library]:::libs --> app
     flow[Flow Sensor]:::hardware --> sysfs[GPIO sysfs]:::drivers --> rpi[RPi.GPIO Interrupts]:::libs --> app
-    relays[Relay Board]:::hardware <-- sysfs <-- rpi <-- app
+    app --> rpi --> sysfs --> relays[Relay Board]:::hardware
 ```
 
 ---
