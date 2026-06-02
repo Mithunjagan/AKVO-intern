@@ -10,7 +10,7 @@ Welcome to the absolute technical manual and specification blueprint for the **A
 
 Originally refactored and adapted from legacy ESP32 firmware, this system ensures Akvosphere generators harvest pure drinking water from ambient humidity with maximum electrical safety, dynamic monitoring, and fleet-wide diagnostic transparency.
 
-Developed by **Mithun Kumar J** for **Akvosphere**.
+Developed by **MithunKumar J** for **Akvosphere**.
 
 ---
 
